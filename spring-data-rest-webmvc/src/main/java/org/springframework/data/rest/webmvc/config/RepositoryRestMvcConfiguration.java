@@ -131,6 +131,7 @@ import org.springframework.hateoas.config.EnableHypermediaSupport;
 import org.springframework.hateoas.config.EnableHypermediaSupport.HypermediaType;
 import org.springframework.hateoas.core.EvoInflectorRelProvider;
 import org.springframework.hateoas.hal.CurieProvider;
+import org.springframework.hateoas.hal.HalConfiguration;
 import org.springframework.hateoas.hal.Jackson2HalModule;
 import org.springframework.hateoas.hal.Jackson2HalModule.HalHandlerInstantiator;
 import org.springframework.hateoas.mvc.ResourceProcessorInvoker;
@@ -533,7 +534,7 @@ public class RepositoryRestMvcConfiguration extends HateoasAwareSpringDataWebCon
 		RelProvider defaultedRelProvider = this.relProvider != null ? this.relProvider : new EvoInflectorRelProvider();
 
 		HalHandlerInstantiator instantiator = new HalHandlerInstantiator(defaultedRelProvider, curieProvider,
-				resourceDescriptionMessageSourceAccessor(), applicationContext.getAutowireCapableBeanFactory());
+				resourceDescriptionMessageSourceAccessor(), true, new HalConfiguration());
 
 		ObjectMapper mapper = basicObjectMapper();
 		mapper.registerModule(persistentEntityJackson2Module());

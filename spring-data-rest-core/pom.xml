@@ -18,6 +18,7 @@
 	<properties>
 		<springplugin>1.2.0.RELEASE</springplugin>
 		<evoinflector>1.2.2</evoinflector>
+		<spring-hateoas>1.0.0.BUILD-SNAPSHOT</spring-hateoas>
 		<java-module-name>spring.data.rest.core</java-module-name>
 	</properties>
 
