@@ -8,6 +8,7 @@
 	<name>Spring Data REST - Core</name>
 	<description>Spring Data REST - Core</description>
 
+
 	<parent>
 		<groupId>org.springframework.data</groupId>
 		<artifactId>spring-data-rest-parent</artifactId>
