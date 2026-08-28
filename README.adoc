@@ -31,4 +31,4 @@ Before we accept a non-trivial patch or pull request we will need you to https:/
 === Note
 
 We disabled the github issues since we want to use https://jira.spring.io/browse/DATAREST[JIRA] as the only issue tracker.
-All open existing issues have been automatically imported into JIRA, so nothing was lost :)
+All open existing issues have been automatically imported into JIRA, so nothing was lost :).
